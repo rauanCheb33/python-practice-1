@@ -25,7 +25,7 @@ print(f'Fuel cost: {fuel_cost} KZT')
 print(f'Category: {trip_cat}')
 print('='*30)
 
-for i in range(100, int(distance), 100):
+for i in range(100, int(distance) +1, 100):
     
     total_cost = (fuel_cons*i/100)*fuel_price
     print(f'{i} km -> {total_cost} KZT')
